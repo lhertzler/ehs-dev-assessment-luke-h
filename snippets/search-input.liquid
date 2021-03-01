@@ -1,0 +1,9 @@
+<form class="search" action="/search">
+  <input
+    type="text"
+    placeholder="Search"
+    name="q"
+    value="{{ search.terms | escape }}"
+  />
+  {% include "icon-search" %}
+</form>

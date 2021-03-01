@@ -1,0 +1,77 @@
+
+    #shopify-section-header {
+        .site-header {
+            @media screen and (max-width: 1164px) {
+           .site-nav {
+                a {
+                    //padding-left: 14px;
+                    //padding-right: 14px;
+                }
+            }
+            .search {
+                display: none;
+            }
+            .site-header__icons {
+                width: 25%;
+            }
+        }
+        @media screen and (max-width: 1026px) {
+            .customer-account {
+                display: none;
+            }
+            .site-header__icons {
+                width: 6%;
+            }
+            #AccessibleNav {
+                width: 69%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .hero {
+        .mega-title {
+            font-size: 60px;
+            letter-spacing: 5px;
+        }
+        .mega-subtitle p {
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 1.25px;
+        }
+        .hero__inner {
+            > div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                padding: 0;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+                width: 90%;
+                a.btn {
+                    padding: 10px 39px;
+                    margin-right: 28px;
+                    border-radius: 4px;
+                    &:nth-of-type(4) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-content .shopify-section {
+    &.collections-section {
+        .collection {
+            .collection-info {
+                bottom: -10%;
+                border: 2px solid #ECECEC;
+                padding: 20px;
+            }
+        }
+    }
+    }
+    
+
+}

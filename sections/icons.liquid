@@ -1,0 +1,46 @@
+{% for block in section.blocks %}
+    <div class="icon">
+    {% if block.settings.icon != blank %}
+        <div class="image">
+            <img src="{{ block.settings.icon | img_url: "master" }}" alt="{{ block.settings.text }}">
+        </div>
+    {% endif %}
+        {% if block.settings.text != blank %}
+            <p>{{ block.settings.text }}</p>
+        {% endif %}
+    </div>
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Store Information",
+  "class": "index-section icons-section",
+  "settings": [
+    
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+        "name": "Collection",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icons",
+      "category": "Store Information"
+    }
+  ]
+}
+{% endschema %}

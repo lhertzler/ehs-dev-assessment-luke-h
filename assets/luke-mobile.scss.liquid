@@ -1,0 +1,183 @@
+#shopify-section-header {
+        .site-header {
+            @media screen and (max-width: 775px) {
+           .site-nav a {
+               padding-left: 15px;
+                padding-right: 15px;
+           }
+           .site-header__logo-image {
+               margin: auto;
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .hero {
+        &.hero--large {
+            background-position: 87% 87% !important;
+        }
+        .mega-title {
+            font-size: 36px;
+            color: #141414;
+            letter-spacing: 1.71px;
+            text-align: center;
+            max-width: 300px;
+            margin: auto;
+        }
+        .mega-subtitle p {
+            font-size: 14px;
+            color: #141414;
+            letter-spacing: 0.88px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .hero__inner {
+            > div {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                padding: 0;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+                width: 95%;
+                background: white;
+                border: 1px solid #D8D8D8;
+                a.btn {
+                    padding: 10px 39px;
+                    margin: 10px;
+                    width: calc(50% - 20px);
+                    &:nth-of-type(4) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+.index-section.vacay-section {
+    position: relative;
+    padding-top: 244px;
+    .image {
+        text-align: right;
+    }
+    .info {
+        padding: 30px;
+        max-width: 650px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transform: translateY(-40%);
+        background: white;
+        .card {
+            border: 2px solid #ECECEC;
+            padding: 29px 45px;
+            h3 {
+                font-weight: bold;
+                font-size: 28px;
+                color: #141414;
+                letter-spacing: 0;
+            }
+            p {
+                font-size: 16px;
+                color: #141414;
+                letter-spacing: 1px;
+                text-align: left;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.main-content .shopify-section {
+    &.collections-section {
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        padding-top: 232px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .collection {
+            width: 100%;
+            position: relative;
+            height: 100%;
+            .collection-info {
+                position: relative;
+                bottom: 5%;
+                background: white;
+                width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                padding: 49px 20px;
+                border: none;
+                h3 {
+                    font-size: 28px;
+                    color: #141414;
+                    letter-spacing: 3px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 16px;
+                    color: #141414;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    line-height: 26px;
+                }
+                .links {
+                    a {
+                        font-weight: bold;
+                        font-size: 14px;
+                        color: #141414;
+                        letter-spacing: 2px;
+                        text-align: center;
+                        line-height: 28px;
+                        padding: 0 10px;
+                        position: relative;
+                        &::after {
+                            content: "|";
+                            position: absolute;
+                            right: 0;
+                        }
+                        &:last-of-type::after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+&.icons-section {
+        background: linear-gradient(225deg, #FAFBFB 0%, #F7F8F8 100%);;
+        display: flex;
+        justify-content: space-around;
+        padding: 55px 0;
+        flex-wrap: wrap;
+        .icon {
+            text-align: center;
+            width: 100%;
+            flex: 100%;
+            height: auto;
+            margin-bottom: 50px;
+            .image {
+                margin-bottom: 24px;
+            }
+            p {
+                font-weight: bold;
+                font-size: 20px;
+                color: #141414;
+                letter-spacing: 1px;
+                text-align: center;
+                line-height: 28px;
+                width: 191px;
+                margin: auto;
+            }
+        }
+    }
+}
+}
+

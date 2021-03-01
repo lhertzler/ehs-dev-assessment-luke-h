@@ -1,0 +1,60 @@
+{% if section.settings.headline != blank %}
+    <div class="info">
+        <div class="card">
+            <h3>{{ section.settings.headline }}</h3>
+            {% if section.settings.text != blank %}
+                <p>{{ section.settings.text }}</p>
+            {% endif %}
+            {% if section.settings.button_label != blank %}
+                <a class="btn" href="{{ section.settings.button_link }}">
+                    {{ section.settings.headline }}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}
+{% if section.settings.image != blank %}
+    <div class="image">
+        <img src="{{ section.settings.image | img_url: "master" }}" alt="Vacay This Way">
+    </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Vacay This Way",
+  "class": "index-section vacay-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+        "type": "text",
+      "id": "headline",
+      "label": "Headline"
+    },
+    {
+        "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+        "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+    "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vacay This Way",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}
